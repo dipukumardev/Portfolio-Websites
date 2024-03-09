@@ -1,7 +1,7 @@
 /*  Making nav bar responsive */
 
-@media(max-width: 610px){
-    #menu{
+@media(max-width: 610px) {
+    #menu {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -14,36 +14,53 @@
         background-color: transparent;
         transition: all 0.4s ease-in-out;
     }
+
     #menu li {
         margin-top: 40px;
     }
-    #menu li a{
+
+    #menu li a {
         padding: 10px;
     }
-    .open-menu , .close-menu {
+
+    .open-menu,
+    .close-menu {
         display: block;
     }
-    #check:checked ~ #menu{
+
+    #check:checked~#menu {
         right: 0;
     }
-.image img{
-    width: 100vw;
-    height: 60vh;
-}
 
-.about_text h4{
-    font-size: 1rem;
-}
-.about_text h1{
-    font-size: 1.5rem;
-}
-.about_text p{
-    font-size: 0.9rem;
-}
+    .image img {
+        width: 100vw;
+        height: 60vh;
+    }
 
-.button_section {
-    width: 100%;
-    gap: 12px;
-    top: 54%;
-}
+    .about_text h4 {
+        font-size: 1rem;
+    }
+
+    .about_text h1 {
+        font-size: 1.5rem;
+    }
+
+    .about_text p {
+        font-size: 0.9rem;
+    }
+
+    .button_section {
+        width: 100%;
+        gap: 12px;
+        top: 54%;
+    }
+
+    .skill_box img{
+        width: 10vw;
+        height: 10vh;
+        justify-content: space-around;
+    }
+
+
+
 }
