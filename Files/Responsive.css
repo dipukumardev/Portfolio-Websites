@@ -26,4 +26,24 @@
     #check:checked ~ #menu{
         right: 0;
     }
+.image img{
+    width: 100vw;
+    height: 60vh;
+}
+
+.about_text h4{
+    font-size: 1rem;
+}
+.about_text h1{
+    font-size: 1.5rem;
+}
+.about_text p{
+    font-size: 0.9rem;
+}
+
+.button_section {
+    width: 100%;
+    gap: 12px;
+    top: 54%;
+}
 }
