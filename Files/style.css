@@ -109,10 +109,25 @@ nav {
 
 
 
-/*  BIO SECTION */
+/*  check my work section */
 
 
-#bio_section {
-    height: 90%;
-    width: 50%;
+.check_my_work{
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    bottom: 5px;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.check_my_work h5{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.check_my_work a{
+   font-size: 2rem;
+   color: black;
 }
