@@ -32,6 +32,7 @@ nav {
     height: 10%;
     width: 100%;
     display: flex;
+    position: fixed;
 }
 
 #nav_bar {
@@ -43,7 +44,8 @@ nav {
     position: relative;
     padding: 12px 20px;
 }
-#logo a{
+
+#logo a {
     color: black;
     position: absolute;
     left: 10%;
@@ -112,7 +114,7 @@ nav {
 /*  check my work section */
 
 
-.check_my_work{
+.check_my_work {
     width: 30%;
     height: 20%;
     position: absolute;
@@ -123,11 +125,43 @@ nav {
     justify-content: center;
     flex-direction: column;
 }
-.check_my_work h5{
+
+.check_my_work h5 {
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
 }
-.check_my_work a{
-   font-size: 2rem;
-   color: black;
+
+.check_my_work a {
+    font-size: 2rem;
+    color: black;
+}
+
+
+
+/* ABOUT SECTION  */
+#About {
+    height: 100vh;
+    width: 100%;
+    background-color: palevioletred;
+}
+
+/* PROJECT SECTION */
+#project {
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
+
+/*  contact section */
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(241, 245, 245);
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
 }
