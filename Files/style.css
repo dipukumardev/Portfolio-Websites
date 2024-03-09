@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#Home_contaner {
+    height: 100vh;
+    width: 100%;
+}
+
+#Home_contaner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#upper_contaner {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+/*  NAV BAR  */
+
+
+nav {
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+
+#nav_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 20px;
+}
+#logo a{
+    color: black;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu li {
+    padding-left: 30px;
+}
+
+#menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: 0.15s ease-in-out;
+}
+
+#menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20%;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+
+
+/*  BIO SECTION */
+
+
+#bio_section {
+    height: 90%;
+    width: 50%;
+}
