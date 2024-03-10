@@ -125,7 +125,7 @@ nav {
     justify-content: space-between;
 }
 
-.tec_links{
+.tec_links {
     width: 10vw;
     height: 40%;
     display: flex;
@@ -133,11 +133,13 @@ nav {
     justify-content: space-around;
     gap: 10px;
 }
-.tec_links a{
+
+.tec_links a {
     font-size: 1.5rem;
     color: black;
     transition: all 0.7s ease-in-out;
 }
+
 .check_my_work {
     width: 35vw;
     height: 40%;
@@ -157,7 +159,7 @@ nav {
     color: black;
 }
 
-.socail_links{
+.socail_links {
     width: 10vw;
     height: 40%;
     display: flex;
@@ -165,7 +167,8 @@ nav {
     justify-content: space-around;
     left: 15px;
 }
-.socail_links a{
+
+.socail_links a {
     font-size: 1.5rem;
     color: black;
     gap: 10px;
@@ -189,17 +192,20 @@ nav {
     align-items: center;
     justify-content: center;
 }
-.image{
+
+.image {
     width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.image img{
+
+.image img {
     width: 100%;
 }
-.about_text{
+
+.about_text {
     width: 60%;
     height: 100%;
     display: flex;
@@ -208,19 +214,23 @@ nav {
     flex-direction: column;
     position: relative;
 }
-.about_text h4{
+
+.about_text h4 {
     position: absolute;
     top: 10%;
     font-size: 1.5rem;
 }
-.about_text h4 span{
+
+.about_text h4 span {
     color: red;
 }
-.about_text h1{
+
+.about_text h1 {
     position: absolute;
     top: 20%;
 }
-.about_text p{
+
+.about_text p {
     position: absolute;
     top: 30%;
     left: 10px;
@@ -228,7 +238,8 @@ nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
 }
-.button_section{
+
+.button_section {
     position: absolute;
     top: 40%;
     width: 40%;
@@ -237,17 +248,20 @@ nav {
     align-items: center;
     justify-content: space-around;
 }
-.button_section a{
+
+.button_section a {
     padding: 12px;
     color: black;
     background-color: white;
     border: none;
     transition: all 0.5s ease-in;
 }
-.button_section a:hover{
+
+.button_section a:hover {
     color: white;
     background-color: black;
 }
+
 .skill_section {
     height: 40vh;
     width: 100%;
@@ -256,15 +270,17 @@ nav {
     position: relative;
 }
 
-.skill_section h5{
+.skill_section h5 {
     font-size: 1.4rem;
     position: absolute;
     top: 15px;
 }
-.skill_section h5 span{
+
+.skill_section h5 span {
     color: red;
 }
-.skill_box{
+
+.skill_box {
     width: 100%;
     height: 80%;
     position: absolute;
@@ -278,7 +294,8 @@ nav {
     mix-blend-mode: darken;
     overflow: hidden;
 }
-.skill_box img{
+
+.skill_box img {
     width: 20vw;
     height: 20vh;
     cursor: pointer;
@@ -288,21 +305,33 @@ nav {
 #project {
     height: 100vh;
     width: 100%;
-    background-color:  rgb(219, 217, 217);
+    background-color: rgb(219, 217, 217);
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
-
+#project span{
+    color: red;
+}
+#project h4{
+    position: absolute;
+    top: 10px;
+    font-size: 1.5rem;
+}
 /*  contact section */
 
 #contact {
     height: 75vh;
     width: 100%;
-    background-color: rgb(241, 245, 245);
+    background-color: rgb(219, 217, 217);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
 }
-form{
+
+form {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -311,22 +340,25 @@ form{
     height: 100%;
     max-width: 600px;
     border-radius: 10px;
-    border: 2px solid black;
 }
-form h3{
-    color: #555;
+
+form h3 {
+    color: #000000;
     font-weight: 800;
     margin-bottom: 20px;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     border: 0;
     margin: 10px 0;
     padding: 20px;
     outline: none;
-    background: white;
+    background: rgba(0, 0, 0, 0.212);
     font-size: 1rem;
 }
-form button{
+
+form button {
     padding: 15px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -337,12 +369,14 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border: 1px solid black;
-   transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
-form button:hover{
+
+form button:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
+
 footer {
     width: 100%;
     height: 30vh;
@@ -352,7 +386,8 @@ footer {
     justify-content: center;
     position: relative;
 }
-.footer-copyrights{
+
+.footer-copyrights {
     width: 100%;
     height: 20%;
     display: flex;
@@ -362,7 +397,8 @@ footer {
     bottom: 10px;
     color: white;
 }
-#footer_links{
+
+#footer_links {
     width: 100%;
     height: 20%;
     display: flex;
@@ -371,7 +407,8 @@ footer {
     position: absolute;
     top: 0;
 }
-#footer_links a{
+
+#footer_links a {
     color: white;
     font-size: 2rem;
 }
