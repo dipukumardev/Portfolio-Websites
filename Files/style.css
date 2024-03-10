@@ -136,6 +136,7 @@ nav {
 .tec_links a{
     font-size: 1.5rem;
     color: black;
+    transition: all 0.7s ease-in-out;
 }
 .check_my_work {
     width: 35vw;
@@ -287,7 +288,8 @@ nav {
 #project {
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    background-color:  rgb(219, 217, 217);
+    border: 1px solid black;
 }
 
 /*  contact section */
@@ -309,6 +311,7 @@ form{
     height: 100%;
     max-width: 600px;
     border-radius: 10px;
+    border: 2px solid black;
 }
 form h3{
     color: #555;

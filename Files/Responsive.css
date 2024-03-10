@@ -1,5 +1,37 @@
 /*  Making nav bar responsive */
 
+@media(max-width:1368px){
+
+
+    .about_text p {
+        font-size: 1.5rem;
+    }
+    .image img {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .button_section {
+        width: 100%;
+        gap: 12px;
+        top: 50%;
+        justify-content: center;
+    }
+    .skill_box img{
+        width: 15vw;
+        height: 15vh;
+        justify-content: space-around;
+    }
+    
+}
+@media(max-width:750px){
+    .about_text p{
+        font-size: 1rem;
+    }
+    .button_section {
+        top: 40%;
+    }
+}
 @media(max-width: 610px) {
     #menu {
         flex-direction: column;
