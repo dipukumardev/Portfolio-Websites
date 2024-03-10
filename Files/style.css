@@ -322,24 +322,38 @@ nav {
 .skill-contaner{
     width: 90vw;
     height: 80vh;
-    border: 1px solid black;
     position: absolute;
     bottom: 60px;
     display: flex;
     justify-content: start;
+    gap: 20px;
 
 }
 .rejouice{
     width: 20vw;
     height: 50vh;
-    border: 1px solid black;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    gap: 12px;
 }
-.img{
+.rejouice img{
     width: 100%;
     height: 40%;
-    border: 1px solid black;
+}
+.rejouice h5{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+
+}
+.rejouice p{
+    font-size: 1rem;
+}
+.rejouice a{
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 /*  contact section */
 
