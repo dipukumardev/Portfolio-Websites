@@ -306,7 +306,6 @@ nav {
     height: 100vh;
     width: 100%;
     background-color: rgb(219, 217, 217);
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     position: relative;
@@ -318,6 +317,29 @@ nav {
     position: absolute;
     top: 10px;
     font-size: 1.5rem;
+}
+
+.skill-contaner{
+    width: 90vw;
+    height: 80vh;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    justify-content: start;
+
+}
+.rejouice{
+    width: 20vw;
+    height: 50vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    width: 100%;
+    height: 40%;
+    border: 1px solid black;
 }
 /*  contact section */
 
