@@ -108,5 +108,19 @@
         height: 100%;
         flex-wrap: wrap;
     }
-
+    .check_my_work{
+        display: none;
+    }
+    .links{
+        width: 100vw;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+    }
+    .tec_links{
+        width: 50%;
+    }
+    .socail_links{
+        width: 50%;
+    }
 }
