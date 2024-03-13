@@ -320,6 +320,11 @@ nav {
     top: 10px;
     font-size: 1.5rem;
 }
+#project h1{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
 
 
 /*  contact section */
