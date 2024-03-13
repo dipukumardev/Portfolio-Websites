@@ -415,6 +415,10 @@ footer {
     position: absolute;
     top: 0;
 }
+.name{
+    color: white;
+    font-size: 2rem;
+}
 
 #footer_links a {
     color: white;
