@@ -91,6 +91,11 @@
         gap: 12px;
         top: 54%;
     }
+    .skill{
+        width: 100vw;
+        height: 20vh;
+        flex-direction: column;
+    }
 
     .skill_box img {
         width: 10vw;
@@ -127,4 +132,11 @@
     #About{
         top: 0;
     }
+}
+/*  ABOUT SECTION RESPONSIVE */
+@media(max-width: 610px){
+    /* .image_text{
+        width: 100vw;
+        height: 30vh;
+    } */
 }

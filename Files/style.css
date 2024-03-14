@@ -9,6 +9,9 @@
 #Home_contaner {
     height: 100vh;
     width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 #Home_contaner video {
@@ -262,6 +265,7 @@ nav {
     background-color: black;
 }
 
+/* SKILL SECTION  */
 .skill_section {
     height: 40vh;
     width: 100%;
@@ -281,7 +285,7 @@ nav {
 }
 
 .skill_box {
-    width: 100%;
+    width: 100vw;
     height: 80%;
     position: absolute;
     bottom: 0;
