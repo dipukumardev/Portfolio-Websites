@@ -5,6 +5,9 @@
     text-decoration: none;
     list-style: none;
 }
+#main{
+    min-height: 100vh;
+}
 
 #Home_contaner {
     height: 100vh;
@@ -300,7 +303,7 @@ nav {
 }
 
 .skill_box img {
-    width: 20vw;
+    width: 14vw;
     height: 20vh;
     cursor: pointer;
 }

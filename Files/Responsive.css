@@ -50,6 +50,7 @@
         z-index: 100;
         transition: all 0.4s ease-in-out;
         background-color: transparent;
+        backdrop-filter: blur(10px);
     }
 
     #menu li {
@@ -132,4 +133,5 @@
     #About{
         top: 0;
     }
+    /* skill section responsive code */
 }
