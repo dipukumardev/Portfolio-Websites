@@ -332,7 +332,11 @@ nav {
     top: 50%;
     left: 40%;
 }
-
+.project_types{
+    width: 99vw;
+    height: 100%;
+    border: 1px solid black;
+}
 
 /*  contact section */
 
