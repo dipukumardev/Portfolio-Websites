@@ -5,6 +5,9 @@
     text-decoration: none;
     list-style: none;
 }
+body{
+    overflow-x: hidden;
+}
 #main{
     min-height: 100vh;
 }
