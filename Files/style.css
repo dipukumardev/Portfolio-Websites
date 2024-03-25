@@ -353,51 +353,6 @@ nav {
     color: black;
 }
 
-form {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    height: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-}
-
-form h3 {
-    color: #000000;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-form input,
-form textarea {
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background: rgba(0, 0, 0, 0.212);
-    font-size: 1rem;
-}
-
-form button {
-    padding: 15px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border: 1px solid black;
-    transition: all 0.8s ease-in-out;
-}
-
-form button:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
 
 footer {
     width: 100%;
