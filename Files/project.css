@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (min-width:200px) and (max-width:767px){
+    #project{
+        height: 220vh;
+    }
+    .project_box{
+        width: 90%;
+        flex-direction: column;
+    }
+    .project_items img{
+        width: 25vw;
+        height: 25vw;
+    }
+}
