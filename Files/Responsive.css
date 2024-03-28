@@ -133,5 +133,11 @@
     #About{
         top: 0;
     }
+    .button_section{
+        justify-content: start;
+    }
+    .button_section a{
+        padding: 5px;
+    }
     /* skill section responsive code */
 }
