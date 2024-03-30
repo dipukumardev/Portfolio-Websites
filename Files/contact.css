@@ -64,7 +64,21 @@ form{
 /* media quari */
 
 @media(max-width:750px){
+    form{
+        width: 100vh;
+        background-color: black;
+        color: white;
+    }
     .contaxt-inputs{
         width: 300px;
+        margin-left: 20px;
+    }
+    .contact-title h2{
+        font-size: 2rem;
+        /* margin-top: 60px; */
+        margin-left: 20px;
+    }
+    .contact-left button{
+        margin-left: 20px;
     }
 }
