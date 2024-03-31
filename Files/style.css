@@ -43,6 +43,8 @@ nav {
     display: flex;
     position: fixed;
     z-index: 9999;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 #nav_bar {
