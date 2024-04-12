@@ -5,7 +5,7 @@
 }
 @media only screen and (min-width:200px) and (max-width:767px){
     #project{
-        height: 150vh;
+        height: 200vh;
     }
     .project_box{
         width: 90%;

@@ -325,7 +325,7 @@ nav {
 
 /* PROJECT SECTION */
 #project {
-    height: 50vh;
+    height: 80vh;
     background-color: rgb(219, 217, 217);
     display: flex;
     justify-content: center;
