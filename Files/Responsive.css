@@ -52,6 +52,11 @@
         background-color: rgba(0, 0, 0, 0.626);
     }
 
+    /* nav bar */
+    #nav_bar{
+        width: 100vw;
+    }
+
     #menu li {
         margin-top: 40px;
     }
