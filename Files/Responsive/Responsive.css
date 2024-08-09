@@ -43,7 +43,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 50vh;
+        height: 70vh;
         position: fixed;
         top: 0;
         right: -100%;
@@ -53,7 +53,7 @@
     }
 
     /* nav bar */
-    #nav_bar{
+    #nav_bar {
         width: 100vw;
     }
 
@@ -77,11 +77,6 @@
         right: 0;
     }
 
-    .image img {
-        width: 100vw;
-        height: 60vh;
-    }
-
     .about_text h4 {
         font-size: 1rem;
     }
@@ -94,58 +89,20 @@
         font-size: 0.9rem;
     }
 
-    .button_section {
-        width: 100%;
-        gap: 12px;
-        top: 54%;
-    }
-    .skill{
-        width: 100vw;
-        height: 20vh;
-        flex-direction: column;
-    }
 
-    .skill_box img {
-        width: 10vw;
-        height: 10vh;
-        justify-content: space-around;
-    }
 
-    .rejouice {
-        width: 100%;
-        height: 20%;
-    }
-
-    .rejouice img {
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
-    }
-    .check_my_work{
-        display: none;
-    }
-    .links{
-        width: 100vw;
-        left: 0;
-        right: 0;
-        justify-content: space-between;
-        bottom:0px
-    }
-    .tec_links{
-        width: 50%;
-    }
-    .socail_links{
-        width: 50%;
-    }
-    #About{
+    #About {
         top: 0;
     }
-    .button_section{
+
+    .button_section {
         justify-content: start;
     }
-    .button_section a{
+
+    .button_section a {
         padding: 5px;
     }
+
     /* skill section responsive code */
 }
 
@@ -211,4 +168,5 @@
         max-width: 100%;
         height: auto;
     }
+
 }

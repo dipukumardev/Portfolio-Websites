@@ -1,29 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 #contact {
     height: auto;
     width: 100%;
-    background-color: rgb(219, 217, 217);
+    background-color: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-bottom: 12px;
 }
-.contact-title{
+
+.contact-title {
     font-weight: 600;
     font-size: 40px;
     margin-bottom: 40px;
 }
-.contaxt-inputs{
+
+.contaxt-inputs {
     width: 400px;
     height: 50px;
     border: none;
@@ -33,29 +37,34 @@ form{
     color: #6666;
     border-radius: 50px;
 }
-.contact-left textarea{
+
+.contact-left textarea {
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
 
 }
-.contaxt-inputs:focus{
+
+.contaxt-inputs:focus {
     border: 2px solid black;
 }
-.contaxt-inputs::placeholder{
+
+.contaxt-inputs::placeholder {
     color: black;
 }
-.contact-left button{
-   padding: 15px 30px;
-   font-size: 16px;
-   color: black;
-   border: none;
-   border-radius: 50px;
-   width: 130px;
-   cursor: pointer;
-   transition: 0.5s;
+
+.contact-left button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    width: 130px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.contact-left button:hover{
+
+.contact-left button:hover {
     color: white;
     background-color: black;
 }
@@ -63,22 +72,29 @@ form{
 
 /* media quari */
 
-@media(max-width:750px){
-    form{
+@media(max-width:750px) {
+    form {
         width: 100vh;
-        background-color: black;
+        background-color: #f0f0f0;
         color: white;
     }
-    .contaxt-inputs{
+    .contact-title h2
+    {
+        color: black;
+    }
+
+    .contaxt-inputs {
         width: 300px;
         margin-left: 20px;
     }
-    .contact-title h2{
+
+    .contact-title h2 {
         font-size: 2rem;
         /* margin-top: 60px; */
         margin-left: 20px;
     }
-    .contact-left button{
+
+    .contact-left button {
         margin-left: 20px;
     }
 }
