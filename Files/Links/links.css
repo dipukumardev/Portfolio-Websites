@@ -4,62 +4,182 @@
     box-sizing: border-box;
 }
 
+/* Hero Section */
 #Links {
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
     position: absolute;
-    bottom: 10vh;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0 30px;
 }
 
 /* Box Container */
 .box-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 25px;
 }
 
 /* Individual Box */
 .box {
-    background-color: #f4f4f477;
     padding: 20px;
-    flex: 1 1 calc(33.333% - 20px);
-    /* 1/3rd width minus some space for margin */
-    margin: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    width: 100%;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    animation: fadeIn 0.8s ease-in-out;
+    animation-fill-mode: both;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.box:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.box:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.box:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .box h3 {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
 }
 
 .box p {
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 1.6;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.box p strong {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Call to Action Box */
+.box:last-child {
+    background-color: rgba(37, 99, 235, 0.2);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    padding: 15px 30px;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+}
+
+.box:last-child:hover {
+    background-color: rgba(37, 99, 235, 0.3);
+}
+
+.box:last-child a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.box:last-child a h4 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #fff;
+}
+
+.box:last-child a i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.box:last-child:hover a i {
+    transform: translateY(5px);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .box {
-        flex: 1 1 calc(50% - 20px);
-        /* 50% width on tablets */
+@media (max-width: 992px) {
+    .box h3 {
+        font-size: 2.5rem;
     }
+    
+    .box p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
     #Links {
-        width: 100vw;
-        height: 10vh;
-        position: absolute;
-        bottom: 40vh;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 20px;
+    }
+    
+    .box {
+        padding: 15px;
+    }
+    
+    .box h3 {
+        font-size: 2.2rem;
+    }
+    
+    .box p {
+        font-size: 1rem;
+    }
+    
+    .box:last-child a h4 {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
+    #Links {
+        padding: 0 15px;
+    }
+    
     .box {
-        flex: 1 1 100%;
-        /* Full width on mobile */
-        margin: 10px 0;
-        /* Adjust margin for stacked layout */
+        padding: 15px;
+    }
+    
+    .box h3 {
+        font-size: 1.8rem;
+    }
+    
+    .box p {
+        font-size: 0.95rem;
+    }
+    
+    .box:last-child a h4 {
+        font-size: 1.1rem;
+    }
+    
+    .box:last-child a i {
+        font-size: 1.3rem;
     }
 }

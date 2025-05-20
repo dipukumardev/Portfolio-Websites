@@ -1,0 +1,60 @@
+/* Responsive styles for project section */
+@media (max-width: 992px) {
+    #product1 .pro-contaner {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    #product1 .pro {
+        width: 45%;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    #product1 h2 {
+        font-size: 24px;
+    }
+    
+    #product1 .pro-contaner {
+        gap: 10px;
+    }
+    
+    #product1 .pro {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+    
+    #product1 .pro .des h5 {
+        font-size: 16px;
+    }
+    
+    #product1 .pro .des span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    #product1 h2 {
+        font-size: 20px;
+    }
+    
+    #product1 .pro {
+        min-width: unset;
+        width: 100%;
+        padding: 8px 10px;
+    }
+    
+    #product1 .pro .des {
+        padding: 8px 0;
+    }
+    
+    #product1 .pro .des h4 {
+        font-size: 14px;
+    }
+    
+    #product1 .pro .des span {
+        font-size: 12px;
+    }
+}

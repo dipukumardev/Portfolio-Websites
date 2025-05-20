@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="./Responsive/Responsive.css">
     <link rel="stylesheet" href="./About/About.css">
     <link rel="stylesheet" href="./Project/project.css">
+    <link rel="stylesheet" href="./Project/responsive-project.css">
+    <link rel="stylesheet" href="./Certification/certification.css">
     <link rel="stylesheet" href="./Contact/contact.css">
     <link rel="stylesheet" href="./Footer/footer.css">
+    <link rel="stylesheet" href="./Resume/cv.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -60,9 +63,12 @@
 
                         </div>
                         <div class="box">
-                            <h4>Check my Work</h4>
-                            <h4><i class="ri-arrow-down-s-line"></i></h4>
-
+                            <div class="box">
+                                <a href="#project">
+                                    <h4>Check my Work</h4>
+                                    <h4><i class="ri-arrow-down-s-line"></i></h4>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,81 +80,175 @@
     <!-- About section -->
 
     <section class="about" id="About">
+        <!-- CV Section based on the second image -->
+        <section id="cv-section" class="cv-section">
+            <div class="cv-container">
+                <div class="cv-left">
+                    <img src="./Images/About Image.jpg" alt="Profile Photo" class="profile-img">
 
-        <div class="sub-box">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="ri-github-fill"></i>
+                            <a href="https://github.com/dipukumardev" target="_blank">
+                                <span>dipukumardev</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-linkedin-box-line"></i>
+                            <a href="https://www.linkedin.com/in/dipu-kumar-39283b259/" target="_blank">
+                                <span>LinkedIn Profile</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-code-box-line"></i>
+                            <a href="https://leetcode.com/u/Dipu__kumar/" target="_blank">
+                                <span>Dipu__kumar</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-book-open-line"></i>
+                            <a href="https://www.geeksforgeeks.org/user/dipukumai6es/" target="_blank">
+                                <span>dipukumai6es</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-terminal-box-line"></i>
+                            <a href="https://www.codechef.com/users/dipukumar44" target="_blank">
+                                <span>dipukumar44</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-instagram-line"></i>
+                            <a href="https://instagram.com/dipu_kumar0_" target="_blank">
+                                <span>dipu_kumar0_</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-whatsapp-line"></i>
+                            <a href="https://wa.me/917870655593" target="_blank">
+                                <span>+91 7870655593</span>
+                            </a>
+                        </div>
+                        <div class="contact-item" onclick="showCurrentLocation()" style="cursor: pointer;">
+                            <i class="ri-map-pin-line"></i>
+                            <span>See my current location</span>
+                        </div>
 
-            <section class="introduction">
-                <h1>Hello, I'm Dipu Kumar</h1>
-                <strong>I am currently pursuing a B.Tech in Computer Science and Engineering (CSE) in my 3rd year at
-                    Sage University, where I have maintained a CGPA of 8.0. Alongside my studies, I am a skilled web
-                    developer with a strong focus on creating
-                    well-structured websites and excel in algorithms, which has been a significant part of my
-                    academic and professional growth. My work and projects reflect my dedication to technology,
-                    innovation, and problem-solving.</strong>
-                <p><a href="https://github.com/dipukumardev">Connect on
-                        Github</a> | <a href="https://www.linkedin.com/in/dipu-kumar-39283b259/">Connect on
-                        LinkedIn</a></p>
+                        <div class="contact-item">
+                            <i class="ri-mail-line"></i>
+                            <a href="mailto:dipukumardevcod@gmail.com">
+                                <span>dipukumardevcod@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                <a href="https://leetcode.com/u/Dipu__kumar/">Connect on
-                    Leetcode</a></p>
-                <a href="https://www.geeksforgeeks.org/user/dipukumai6es/">Connect on
-                    GeeksForGeeks</a></p>
-                <a href="https://www.naukri.com/code360/profile/7e2824e1-5fa3-4854-84a4-618b23905601">Connect on
-                    Coding Ninjas</a></p>
-            </section>
+                <div class="cv-right">
+                    <div class="cv-header">
+                        <h1 class="cv-heading">Dipu Kumar</h1>
+                        <p class="cv-subheading">I am currently pursuing a B.Tech in Computer Science and Engineering
+                            (CSE) in my 3rd year at Sage University, where I have maintained a CGPA of 8.0. Alongside my
+                            studies, I am a skilled web developer with a strong focus on creating well-structured
+                            websites and excel in algorithms, which has been a significant part of my academic and
+                            professional growth.</p>
+                    </div>
 
-        </div>
+                    <h2 class="section-title">EDUCATION</h2>
+                    <div class="education-item">
+                        <h3 class="education-title">Bachelor of Technology in Computer Science</h3>
+                        <p class="education-place">Sage University, Bhopal</p>
+                        <p>CGPA: 8.0 | 2022 - Present</p>
+                    </div>
 
-        <div class="sub-box">
-            <h2>--Education</h2>
-            <div class="inner-box">
-                <h3>B.Tech</h3>
-                <p>I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering
-                    (CSE) at Sage University, where I have maintained a <strong>CGPA of 8.0</strong>. My academic
-                    journey has
-                    equipped me with a strong foundation in programming, algorithm design, and software development.
-                </p>
+                    <div class="skills-section">
+                        <div class="skills-row">
+                            <div class="skills-col">
+                                <h2 class="section-title">TECHNICAL SKILLS</h2>
+                                <div class="tech-skills-grid">
+                                    <div class="tech-item">
+                                        <div class="tech-icon html">H</div>
+                                        <div class="tech-name">HTML</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon css">C</div>
+                                        <div class="tech-name">CSS</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon javascript">JS</div>
+                                        <div class="tech-name">JavaScript</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon reactjs">R</div>
+                                        <div class="tech-name">React.js</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon nodejs">N</div>
+                                        <div class="tech-name">Node.js</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon mongodb">M</div>
+                                        <div class="tech-name">MongoDB</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon sql">SQL</div>
+                                        <div class="tech-name">SQL</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon shadcn">SC</div>
+                                        <div class="tech-name">Shadcn</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon tailwind">TW</div>
+                                        <div class="tech-name">Tailwind CSS</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon java">J</div>
+                                        <div class="tech-name">Java</div>
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-icon cpp">C++</div>
+                                        <div class="tech-name">C++</div>
+                                    </div>
+                                    <div class="software-item">
+                                        <div class="software-icon vs-code">VS</div>
+                                        <div class="software-name">VS CODE</div>
+                                    </div>
+                                    <div class="software-item">
+                                        <div class="software-icon figma">F</div>
+                                        <div class="software-name">FIGMA</div>
+                                    </div>
+                                    <div class="software-item">
+                                        <div class="software-icon git">G</div>
+                                        <div class="software-name">GIT</div>
+                                    </div>
+                                    <div class="software-item">
+                                        <div class="software-icon npm">NPM</div>
+                                        <div class="software-name">NPM</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-col">
+                                <h2 class="section-title">SOFT SKILLS</h2>
+                                <div class="soft-skills-grid">
+                                    <div class="soft-skill">LEADERSHIP</div>
+                                    <div class="soft-skill">CREATIVE THINKING</div>
+                                    <div class="soft-skill">TIME MANAGEMENT</div>
+                                    <div class="soft-skill">COMMUNICATION</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="section-title">LANGUAGE PROFICIENCY</h2>
+                    <div class="language-list">
+                        <div class="language-item">ENGLISH</div>
+                        <div class="language-item">HINDI</div>
+                    </div>
+
+
+                </div>
             </div>
-            <div class="inner-box">
-                <h3>12th</h3>
-                <p>I completed my 12th grade from the Bihar Board with a score of 53%. During this time, I focused
-                    on key subjects like Mathematics, Physics, and Chemistry. My studies in these areas helped me
-                    develop strong analytical and problem-solving skills, which have been essential in my academic
-                    journey.</p>
-            </div>
-            <div class="inner-box">
-                <h3>10th</h3>
-                <p>I completed my 10th grade at Comfort Public School with a score of 60%. This period was crucial
-                    in building a strong foundation in core academic subjects, laying the groundwork for my
-                    continued education. The experiences and lessons learned during these years have played a
-                    significant role in shaping my academic journey.</p>
-            </div>
-        </div>
-        <div class="sub-box">
-            <h2>--Services I Provide</h2>
-            <!-- <div class="inner-box">
-                <h3>Labor Hiring</h3>
-                <p><strong>Labour Wise</strong> is an app designed to simplify labor hiring by connecting employers
-                    with skilled
-                    workers. It offers an easy-to-use platform for job posting, application, and efficient matching
-                    of job requirements with candidates.
-                </p>
-            </div> -->
-            <div class="inner-box">
-                <h3>Website Devloper</h3>
-                <p>I am a website developer skilled in creating responsive and user-friendly sites. With experience
-                    in both front-end and back-end technologies, I focus on delivering high-quality, functional web
-                    solutions. My expertise includes HTML, CSS, JavaScript, and various frameworks, ensuring
-                    visually appealing and efficient websites.</p>
-            </div>
-            <div class="inner-box">
-                <h3>Festival-Based Templates</h3>
-                <p>Celebrate the festive season with our specially designed website templates! For just ₹299, you
-                    get access to beautifully crafted, festival-themed templates tailored for one year. Perfect for
-                    businesses and individuals looking to enhance their online presence during special occasions.
-                </p>
-            </div>
-        </div>
+        </section>
 
     </section>
 
@@ -293,63 +393,171 @@
     </div>
 
 
+    <!-- Certification section -->
+    <section class="certifications">
+        <h1>My <span>Certifications</span></h1>
+        <p>Professional credentials that validate my expertise and continuous learning.</p>
 
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="IBM">IBM</button>
+            <button class="filter-btn" data-filter="University of California, Davis">University of California,
+                Davis</button>
+            <button class="filter-btn" data-filter="HackerRank">HackerRank</button>
+            <button class="filter-btn" data-filter="Google">Google</button>
+            <button class="filter-btn" data-filter="Udemy">Udemy</button>
+        </div>
 
-
-
-    <div id="contact">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-title">
-                <h2>Get in touch</h2>
+        <!-- Certification Cards -->
+        <div class="certifications-container">
+            <div class="cert-card" data-category="IBM">
+                <span class="badge IBM">IBM</span>
+                <h3>IBM Full Stack Software Developer Specialization</h3>
+                <p>Coursera</p>
+                <span class="verified">✔ Verified Credential</span>
+                <a href="#" class="view-certificate">View Certificate ↗</a>
             </div>
-            <input type="hidden" name="access_key" value="2fae7e0f-40b6-47d5-8dc1-d1649465fffc">
-            <input type="text" name="name" placeholder="Your Name" class="contaxt-inputs" required>
-            <input type="email" name="email" placeholder="Your Email" class="contaxt-inputs" required>
-            <textarea name="massage" placeholder="Your massage" class="contaxt-inputs" required></textarea>
-            <button type="submit">Submmit</button>
-        </form>
-    </div>
+
+            <div class="cert-card" data-category="University of California, Davis">
+                <span class="badge uc-davis">University of California, Davis</span>
+                <h3>Search Engine Optimization (SEO)</h3>
+                <p>Coursera</p>
+                <span class="verified">✔ Verified Credential</span>
+                <a href="#" class="view-certificate">View Certificate ↗</a>
+            </div>
+
+            <div class="cert-card" data-category="IBM">
+                <span class="badge IBM">IBM</span>
+                <h3>Python for Data Science, AI & Development</h3>
+                <p>Coursera</p>
+                <span class="verified">✔ Verified Credential</span>
+                <a href="#" class="view-certificate">View Certificate ↗</a>
+            </div>
+
+            <div class="cert-card" data-category="HackerRank">
+                <span class="badge hackerrank">HackerRank</span>
+                <h3>SQL (Advanced)</h3>
+                <p>HackerRank</p>
+                <span class="verified">✔ Verified Credential</span>
+                <a href="#" class="view-certificate">View Certificate ↗</a>
+            </div>
+        </div>
+    </section>
 
 
 
 
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 class="contact-info-title">Contact Info</h3>
+                <div class="contact-info-underline"></div>
 
+                <div class="contact-item">
+                    <i class="ri-whatsapp-line"></i>
+                    <a href="https://wa.me/917870655593" target="_blank">
+                        <span>+91 7870655593</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:dipukumardevcod@gmail.com">
+                        <span>dipukumardevcod@gmail.com</span>
+                    </a>
+                </div>
+
+                <div class="contact-item" onclick="showCurrentLocation()" style="cursor: pointer;">
+                    <i class="ri-map-pin-line"></i>
+                    <span>See my current location</span>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contactForm" onsubmit="sendEmail(); return false;" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" class="form-control" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" class="form-control" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
     <footer>
         <div id="footer_sub_box">
             <div class="footer_sub_box">
                 <h4>Dipu.tech®</h4>
+                <p>A passionate developer focused on creating beautiful and functional web experiences.</p>
             </div>
             <div class="footer_sub_box">
                 <h4>Social Links</h4>
-                <a href="https://github.com/dipukumardev"><i class="ri-github-fill"></i></a> |
-                <a href="https://www.linkedin.com/in/dipu-kumar-39283b259/"><i class="ri-linkedin-box-line"></i> </a> |
-                <a href="#"><i class="ri-twitter-x-line"></i></a> |
-                <a href="https://www.instagram.com/dipu_kumar0_/"><i class="ri-instagram-line"></i></a> |
+                <div class="social-icons">
+                    <a href="https://github.com/dipukumardev"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/dipu-kumar-39283b259/"><i class="ri-linkedin-box-line"></i></a>
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://www.instagram.com/dipu_kumar0_/"><i class="ri-instagram-line"></i></a>
+                </div>
             </div>
             <div class="footer_sub_box">
-                <h4>Website Links</h4>
-                <a href="#Home_contaner">Home |</a>
-                <a href="#About">About |</a>
-                <a href="#project">Project |</a>
-                <a href="#contact">Contact Us </a>
-                <li> <a href="./Resume/Dipu kumar (2).pdf" class="download-button"
-                    download="Dipu kumar.pdf">Download Resume</a></li>
+                <h4>Quick Links</h4>
+                <a href="#Home_contaner">Home</a><br>
+                <a href="#About">About</a><br>
+                <a href="#project">Projects</a><br>
+                <a href="#contact">Contact</a><br>
+                <li><a href="./Resume/Dipu kumar (2).pdf" class="download-button" download="Dipu kumar.pdf">Download
+                        Resume</a></li>
+            </div>
+            <div class="footer_sub_box">
+                <h4>Contact Info</h4>
+                <div class="contact-item">
+                    <i class="ri-whatsapp-line"></i>
+                    <a href="https://wa.me/917870655593" target="_blank">
+                        <span>+91 7870655593</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:dipukumardevcod@gmail.com">
+                        <span>dipukumardevcod@gmail.com</span>
+                    </a>
+                </div>
 
-            </div>
-            <div class="footer_sub_box">
-                <h4>Contact Us</h4>
-                Whatapp:7870655593 | <br>
-                Email:dipukumardevcod@gmail.com
+                <div class="contact-item" onclick="showCurrentLocation()" style="cursor: pointer;">
+                    <i class="ri-map-pin-line"></i>
+                    <span>See my current location</span>
+                </div>
             </div>
         </div>
         <div id="Right">
-            <p>&copy; 2025 Dipu_tech®. All Rights Reserved.</p>
+            <p>&copy; 2025 Dipu.tech®. All Rights Reserved.</p>
         </div>
     </footer>
 
     </div>
-    <script src="Include a script tag to https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="app.js"></script>
+    <script src="./Certification/certification.js"></script>
 </body>
 
 </html>

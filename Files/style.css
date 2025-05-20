@@ -5,46 +5,95 @@
     text-decoration: none;
     list-style: none;
 }
-body{
+
+body {
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
-#main{
+
+#main {
     min-height: 100vh;
 }
 
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Landing Page */
 #Home_contaner {
     height: 100vh;
     width: 100%;
     position: relative;
     top: 0;
     left: 0;
+    overflow: hidden;
+}
+
+#Home_contaner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 #Home_contaner video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover; 
     position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.9);
 }
 
 #upper_contaner {
     height: 100vh;
     width: 100%;
     position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-
-/*  NAV BAR  */
-
-
+/* Navbar */
 nav {
-    height: 10%;
+    height: auto;
     width: 100%;
     display: flex;
     position: fixed;
     z-index: 9999;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #nav_bar {
@@ -54,18 +103,27 @@ nav {
     align-items: center;
     list-style: none;
     position: relative;
-    padding: 12px 20px;
+    padding: 15px 30px;
 }
 
 #logo a {
     color: black;
-    position: absolute;
-    left: 10%;
-    top: 35%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.7);
+}
+
+#logo a:hover {
+    transform: scale(1.05);
 }
 
 #menu {
     display: flex;
+    align-items: center;
 }
 
 #menu li {
@@ -77,24 +135,53 @@ nav {
     text-decoration: none;
     color: black;
     text-align: center;
-    transition: 0.15s ease-in-out;
+    transition: 0.3s ease;
     position: relative;
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.7);
 }
 
 #menu li a::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 0%;
-    height: 1px;
-    background-color: black;
-    transition: 0.15s ease-in-out;
+    height: 2px;
+    background-color: #2563eb;
+    transition: 0.3s ease;
+    border-radius: 2px;
+}
+
+#menu li a:hover {
+    color: #2563eb;
 }
 
 #menu li a:hover:after {
     width: 100%;
+}
+
+.download-button {
+    background-color: #2563eb;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+    transition: all 0.3s ease !important;
+    text-shadow: none !important;
+}
+
+.download-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+.download-button::after {
+    display: none !important;
 }
 
 .open-menu,
@@ -121,4 +208,47 @@ nav {
     display: none;
 }
 
-
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+    
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: all 0.4s ease-in-out;
+        backdrop-filter: blur(10px);
+    }
+    
+    #menu li {
+        margin-top: 40px;
+        padding: 0;
+    }
+    
+    #menu li a {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    
+    #check:checked ~ #menu {
+        right: 0;
+    }
+    
+    #logo a {
+        font-size: 1.3rem;
+    }
+    
+    .download-button {
+        margin-top: 20px;
+    }
+}
