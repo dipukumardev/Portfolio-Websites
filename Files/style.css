@@ -208,6 +208,43 @@ nav.scrolled {
     display: none;
 }
 
+/* Cursor Circle Styles */
+#cursor-circle {
+    position: fixed;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #4e7cff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-out;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    left: 17px;
+    top: 17px;
+}
+
+.cursor-dot {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #4e7cff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    mix-blend-mode: difference;
+}
+
+#cursor-circle.hover {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(78, 124, 255, 0.3);
+    border-color: #4e7cff;
+}
+
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .open-menu,
