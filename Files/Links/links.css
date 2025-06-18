@@ -8,9 +8,9 @@
 #Links {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     padding: 0 30px;
 }
 
@@ -136,8 +136,8 @@
 
 @media (max-width: 768px) {
     #Links {
-        top: 50%;
-        transform: translateY(-50%);
+        top: 60%;
+        transform: translateY(-40%);
         padding: 0 20px;
     }
     
